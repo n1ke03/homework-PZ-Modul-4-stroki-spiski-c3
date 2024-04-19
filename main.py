@@ -8,20 +8,20 @@ list = [random.randint(-5, 20) for i in range(10)]
 # ■ Произведение элементов с индексами кратными 3;
 # ■ Произведение элементов между минимальным и максимальным элементом;
 # ■ Сумму элементов, находящихся между первым и последним положительными элементами.
-# sum_neg = 0
-# sum_chet = 0
-# sum_nechet = 0
+sum_neg = 0
+sum_chet = 0
+sum_nechet = 0
 print(list)
-# for i in list:
-#   if i < 0:
-#     sum_neg += i
-#   if i % 2 == 0:
-#     sum_chet += i
-#   if i % 2 != 0:
-#     sum_nechet += i
-# print('Суммa отрицательных чисел = ',sum_neg)
-# print('Суммa четных чисел = ',sum_chet)
-# print('Суммa нечетных чисел = ',sum_nechet)
+for i in list:
+  if i < 0:
+    sum_neg += i
+  if i % 2 == 0:
+    sum_chet += i
+  if i % 2 != 0:
+    sum_nechet += i
+print('Суммa отрицательных чисел = ',sum_neg)
+print('Суммa четных чисел = ',sum_chet)
+print('Суммa нечетных чисел = ',sum_nechet)
 
 
 # Задание 2
